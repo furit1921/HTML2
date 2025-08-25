@@ -21,6 +21,25 @@
             box-shadow: 5px 5px 10px rgb(255, 0, 0);
          } 
 
+                     .Grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+                grid-template-rows: repeat(2, 200px);
+                gap: 15px;
+                padding: 20px;
+                background: #fff;
+            }
+             .Grid-item {
+                background: lightcoral;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+                border-radius: 10px;
+             }
+
         img {
             background-color: lightcoral;
             color: darkslateblue;
@@ -93,6 +112,10 @@
                 background-color: lavender;
             }
 
+            
+            
+
+
 
             
     </style>
@@ -132,5 +155,17 @@
         <p> Indian desserts are known for their rich flavors, unique textures, and the use of ingredients like milk, sugar, and various spices. They are a perfect way to end a meal on a sweet note.</p>
         <p> So, if you ever get a chance to try Indian cuisine, make sure to indulge in these delightful desserts. They are sure to leave you with a sweet memory of Indian culinary traditions!</p>
         <hr>
+
+       <p> other cusines</p>
+        <div class="Grid-container">
+         
+
+            <div class="Grid-item"> 🍕 Italian</div>
+            <div class="Grid-item"> 🍣 Japanese</div>
+            <div class="Grid-item"> 🥘 Spanish</div>
+            <div class="Grid-item"> 🍔 American</div>
+            <div class="Grid-item"> 🌮 Mexican</div>
+            <div class="Grid-item"> 🍜 Chinese</div>
+        </div>
 </body>      
 </html>
