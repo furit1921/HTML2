@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title> CSS Grid Layout </title>
+        <style>
+            body {  
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: dodgerblue;
+            }
+
+            .Grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+                grid-template-rows: repeat(2, 200px);
+                gap: 15px;
+                padding: 20px;
+                background: #fff;
+            }
+             .Grid-item {
+                background: lightcoral;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+                border-radius: 10px;
+             }
+                
+        </style>
+    </head>
+    <body>
+        <div class="Grid-container">
+         
+
+            <div class="Grid-item"> 🍕 Italian</div>
+            <div class="Grid-item"> 🍣 Japanese</div>
+            <div class="Grid-item"> 🥘 Spanish</div>
+            <div class="Grid-item"> 🍔 American</div>
+            <div class="Grid-item"> 🌮 Mexican</div>
+            <div class="Grid-item"> 🍛 Indian <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg" alt="indi food" width="100px"></div>
+            <div class="Grid-item"> 🍜 Chinese</div>
+        </div>
+    </body>
+</html>
