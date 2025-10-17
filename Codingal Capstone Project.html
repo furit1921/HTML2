@@ -38,5 +38,24 @@
            <a href="indian_anthem.html"> about My nation anthem :D</a>
             <a href="spooky.html"> spok story :(</a>
         </div>
+        <section>
+            <img class="myslides" src="https://www.hindustantimes.com/ht-img/img/2025/08/31/550x309/scpkid_1756681794328_1756681806249.jpg" style="height: 500px;" >
+            <img class="myslides" src="https://static-cdn.jtvnw.net/jtv_user_pictures/74bfc080-a176-406f-b7f9-0b0dbe39e749-profile_banner-480.jpeg" style="height: 500px;" >
+        </section>
+        <script>
+            var myIndex = 0;
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("myslides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 3000);
+            }
+        </script>
      </body>
 </html>
