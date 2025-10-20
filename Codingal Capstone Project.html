@@ -28,6 +28,61 @@
                 background-color: darkturquoise;
                 color: rgba(0, 239, 195, 0.863);
             }
+
+            .pimg3 { 
+                position: relative;
+                opacity: 0.70;
+                background-position: center;
+                 background-size: cover;
+                 background-repeat: no-repeat;
+                 background-attachment: fixed;
+            }
+
+            .pimg3 { 
+                background-image: url(https://tr.rbxcdn.com/180DAY-d6b6e6b8936815be2f590b9e16b94a3d/420/420/Hat/Webp/noFilter);
+                min-height: 400px;
+            }
+
+            .section {
+                text-align: center;
+                padding: 50px 80px;
+            }
+
+            .section-light { 
+                background-color: aliceblue;
+                color: #676767;
+            }
+
+        .section-dark {  
+            background-color: #676767;
+            color: #ffffff67;
+        }
+       
+        .ptext {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000000;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .ptext .border {
+            background-color: #000000;
+            color: rgba(254, 153, 11, 0.892);
+            padding: 20px;
+        }
+
+        .ptext .border.trans { 
+            background-color: transparent;
+        }
+
+     @media (max-width: 568px) {
+        .pimg3 {
+            background-attachment: scroll;
+        }}
         </style>
      </head>
      <body>
@@ -46,14 +101,23 @@
             <img class="myslides" src="https://static-cdn.jtvnw.net/jtv_user_pictures/74bfc080-a176-406f-b7f9-0b0dbe39e749-profile_banner-480.jpeg" style="height: 500px;" >
             <img class="myslides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQuIFadW3MIPZJXJMSLyFZgD_Kyb9pf2P3w&s" style="height: 500px;" >
         </section>
+         <section>
         <span class="border trans" style="font-size: 40px">
             <center> Welcome to socks web !  Enjoy your stay :) </center>
         </span><br>
+         </section>
         <section class=" section section-dark">
             <h2> my fav utube youtubers </h2>
             <p> socks for one, socks for two, socks for three, socks reacts socks irl, they are best!!! h̶̻̝̼̻͎̝̮̹̬̋͛̔̉̎̃͠i̴̢̳̘̲̝̣̪͈̋̎̈́̑͛͜ ̷̧̧͕̣̻̘͙̞̣͎̲̩͗̈́̊͌̆̇͜q̶͔̇̆̄̐̎̔͆̓͗̽̀͘ừ̸̏̇̐͒͑̍̋̂̓̒̚ͅṡ̴̯͔̊̓̌͛͝l̶̢̫̩̩̬͕̳͋̅̐͐͑̒͑i̸͙͒͑̎̾͒̀͘m̵̡͖̘͉̗͓̝̀̿̒̈́̊̆̈́̈́̕͝ ̴̳̳̭͚̐̌̑͜m̶̢̛̳̻͓͙̮̟̄̆̓̅̔͘ͅṳ̵̮̦͍̱̝̜̰̫̉̈́̔͛̈́͝s̶̡̨̡͍͍̳̺̪̟̖̙̤̆̍̈́̆̌̑͂̊̓͛́͛t̴͙͖̥̜̦͙͕̱̓́̐̋̀̀̍͌̇̄̂̕̕͜a̴̬͋͑̓q̵̼̜͔͊͋</p>
 
         </section>
+        <div class="pimg3">
+            <div class="ptext">
+        <span class="border trans">
+        Nicholas vid - best youtuber ever ! ( bro do not know 6 7 meme, he lives under a rock )
+        </span>
+        </div>
+        </div>
         <script>
             var myIndex = 0;
           carousel();
