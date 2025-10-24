@@ -83,6 +83,25 @@
         .pimg3 {
             background-attachment: scroll;
         }}
+
+        footer { 
+            background-color: #00000067;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 60px;
+        }
+
+        footer a { 
+            color: #f2f2f2;
+            text-decoration: none;
+            margin: 0 10px;
+
+        }
+
+         footer a:hover { 
+            text-decoration: underline;
+         }
         </style>
      </head>
      <body>
@@ -118,12 +137,27 @@
         </span>
         </div>
         </div>
+        <footer>
+            <p>
+            <a href="#"> privacy policy</a>
+            <a href="#"> TOS </a>
+            <a href="#">contact us</a>
+            </p>
+            <p> follow us on
+                <a href="https://x.com/"> x </a>
+                 <a href="www.instagram.com"> instagram</a>
+                   <a href="https://www.facebook.com/"> facebook</a>
+            </p>
+            
+            <p> Qulsum.mir all right reserved® © ™ </p>
+            
+        </footer>
         <script>
             var myIndex = 0;
           carousel();
             function carousel() {
             
-                var i;
+                var i; 
                 var x = document.getElementsByClassName("myslides");
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";  
