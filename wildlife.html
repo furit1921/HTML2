@@ -52,41 +52,82 @@
             <a href="https://en.wikipedia.org/wiki/Animal"> learn more than me FAH</a>
             <a href=""> images</a>
         </div>
-
+        <section>
+       <span class="border-trans" style="font-size: 40px;">
         <h1> welcome to wildlife page</h1>
         <hr>
+        </span><br>
+        </section>
+        <section class=" section section-dark">
         <p> wildlife refers to undomesticated animals living in their natural habitats. It encompasses a
              diverse range of species, including mammals, birds, reptiles, amphibians, fish, and insects
              . Wildlife plays a crucial role in maintaining ecological balance and biodiversity. Conservat
              ion efforts are essential to protect wildlife from threats such as habitat loss, poaching, and cl
              imate change. By preserving wildlife, we ensure the health of ecosystems and the well-being of future generations.</p>
-
-             <div class="carosuel-contianer ">
+        </section>
+        <h2> enjoy the funny wildlife images</h2>
+             <div class="carousel-contianer ">
                 <div>
                     <img class="myslides" src="https://i.natgeofe.com/n/c0e0a134-3e97-4b8f-9f7b-9d11f5e1bf02/comedy-wildlife-awards-squirel-stop.jpg" height="300" width="300" alt="slide1">
                     <img class="myslides" src="https://www.meme-arsenal.com/memes/2963b4d9fbcf292bf902847c1175c2d9.jpg" height="300" width="300" alt="slide2">
                     <img class="myslides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNEm35Gr8i-zcnUZIjKPw0JCvG5SgiCRnbRA&s" height="300" width="300" alt="slide3">
                     <img class="myslides" src="https://i.pinimg.com/236x/6e/89/fa/6e89faaffc9ff42df7167c60abf6775c.jpg" height="300" width="300" alt="slid4">
                 </div>
+                </div>
+                <div class="pimg3">
+                    <div class="ptext">
+                        <span class="border-trans">
+                            image two test
+                        </span>
+                    </div>
+                </div>
+
+                 <h3>Parastratiosphecomyia stratiosphecomyioides (Southeast Asian soldier fly)/h3>
+
+                    <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7FXhXaZjE5MjnZaOjOUcr0_qZFnHpbUIfqA&s" style="width: 170px; height: 170px; margin-left: 15px; float: right;">
+                    Parastratiosphecomyia stratiosphecomyioides is a species of fly in the family Stratiomyidae. 
+                    It is known for having one of the longest scientific names of any animal species. This fly is native to Southeast Asia and 
+                    is characterized by its distinctive appearance, which includes a wasp-like body and striking coloration. The name 
+                    "Parastratiosphecomyia stratiosphecomyioides" reflects its resemblance to wasps, with "stratiosphecomyioides" meaning
+                     "resembling Stratiosphecomyia."</p>
+                         <hr>
+
+                         
+                 <h3>The great evening bat (Ia io)</h3>
+
+                    <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX94Pkw48abX7WjaHdIyZsJJtSmj-_ejMzpg&s" style="width: 170px; height: 170px; margin-left: 15px; float: right;">
+                  
+                   The great evening bat is the largest bat in the vesper bat family and the only living species in the genus Ia
+                   . It is common to Eastern and Southeastern Asia
+                   , mainly living in areas with limestone caves at altitudes of 400–1,700 metres. </p>
+                         <hr>
+
+                         
+                 <h3>Sacabambaspis</h3>
+
+                    <p> <img src="https://automaton-media.com/en/wp-content/uploads/2023/06/20231616-19550-header.png" style="width: 170px; height: 170px; margin-left: 15px; float: right;">
+                    
+                    Sacabambaspis is an extinct genus of armored jawless fish which lived in the Ordovician period.
+                     Sacabambaspis inhabited shallow waters on the continental margins of the southern supercontinent Gondwana</p>
+                         <hr>
              <script>
                let index = 0;
-               carosuel();
-               function carosuel() {
+               carousel();
+               function carousel() {
                 let i;
                 let slides = document.getElementsByClassName("myslides");
 
-                for (i = 0; i < x.length; i++) {
+                for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
                 index++;
-                if (index > x.length){
+                if (index > slides.length){
                  index = 1
                }
-               x[index - 1].style.display = "block"
+               slides[index - 1].style.display = "block"
 
-               setTimeout(carosuel, 2000);
+               setTimeout(carousel, 2000);
 
-carosuel(); // start the carosuel when the page loads
                 }
              </script>   
              

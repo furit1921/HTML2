@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> learn page </title>
+        <style>
+
+                 body { 
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .topnav a { 
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active { 
+                background-color: wheat;
+                color: darkgoldenrod;
+            }
+
+            .myslides { 
+                height: 500px;
+                width: 100%;
+            }
+
+            img {
+               width: 200px;
+            }
+        </style>
+        </head>
+ <body>
+    
+        <div class="topnav">
+            <a class="active" href="homowork.html">home</a>
+            <a href="">about</a>
+            <a href="">contact us</a>
+            <a href="https://en.wikipedia.org/wiki/Learning_theory_(education)"> "learn" more hehehe</a>
+            <a href=""> images</a>
+        </div>
+
+        <h1> welcome to learn page</h1>
+        <hr>
+        <p> Learning is the process of acquiring knowledge, skills, attitudes, or values through study, 
+            experience, or teaching. It is a fundamental aspect of human development </p>
+
+             <div class="carosuel-contianer ">
+                    <img class="myslides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShUjZG5TddWCPlsWSxWHlrvOJ6BoARlkL3LA&s" height="300" width="300" alt="slide1">
+                    <img class="myslides" src="https://s3.amazonaws.com/lowres.cartoonstock.com/business-commerce-business-learning-training-tasks-worried-aton8451_low.jpg" height="300" width="300" alt="slide2">
+                    <img class="myslides" src="https://previews.123rf.com/images/yiorgosgr/yiorgosgr1810/yiorgosgr181000023/112521815-funny-computer-nerd-with-his-laptop-e-learning-concept.jpg" height="300" width="300" alt="slide3">
+                    <img class="myslides" src="https://www.boredpanda.com/blog/wp-content/uploads/2023/05/funny-college-memes-humor-state-university-fb-64526ec0cf010-png__700.jpg" height="300" width="300" alt="slide4">
+                </div>
+                <script>
+               let index = 0;
+               carosuel();
+               function carosuel() {
+                let i;
+                let slides = document.getElementsByClassName("myslides");
+
+                for (i = 0; i < x.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                index++;
+                if (index > x.length){
+                 index = 1
+               }
+               x[index - 1].style.display = "block"
+
+               setTimeout(carosuel, 2000);
+
+carosuel(); // start the carosuel when the page loads
+                }
+             </script>
+ </body>
+</html>
