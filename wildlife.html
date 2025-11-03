@@ -8,11 +8,18 @@
             body { 
                 margin: 0;
                 font-family: Arial, Helvetica, sans-serif;
+                background-color: lightyellow;
+                color: beige;
+                line-height: 1.6;
             }
 
             .topnav {
                 overflow: hidden;
                 background-color: #333;
+                box-shadow: 0 2px 5px lemonchiffon;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
             }
 
             .topnav a { 
@@ -22,6 +29,7 @@
                 padding: 14px 16px;
                 text-decoration: none;
                 font-size: 17px;
+                transition: background-color 0.3s ease, color 0.3s ease;
             }
 
             .topnav a:hover {
@@ -37,11 +45,119 @@
             .myslides { 
                 height: 500px;
                 width: 100%;
+                display: none;
+                border-radius: 15px;
+                object-fit: contain;
+                box-shadow: 0 4px 15px oklch(59.553% 0.0514 230.391);
             }
 
             img {
                width: 200px;
             }
+
+            section h1{
+                text-align: center;
+                color: darkgreen;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-top: 20px;
+            }
+
+            section hr { 
+                width: 60%;
+                margin: 10px auto;
+                border: 2px solid   darkgreen;
+            }
+
+            .section-dark { 
+                background-color: #f4f4f4;
+                color: #333;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 20px;
+                width: 85%;
+                box-shadow: 0 4px 10px rgb(255, 67, 67);
+                 text-align: justify;
+                 font-size: 18px;
+            }
+
+            carousel-contianer {
+            text-align: center;
+            margin: 30px 0;
+            background-color: antiquewhite;
+            border-radius: 12px;
+            padding: 15px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 15px oklch(66.257% 0.22404 25.787 / 0.1);
+            }
+
+            h2 { 
+                text-align: center;
+                color: darkgreen;
+                font-size: 2rem;
+                margin-top: 20px;
+                text-transform: capitalize;
+            }
+
+            h3{
+                color: darkblue;
+                margin: 0 50px 30px;
+                text-transform: capitalize;
+                font-size: 1.5rem;
+            }
+
+            p{
+                margin: 0 50px 30px;
+                background-color: beige;
+                color: #333;
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px oklch(66.257% 0.22404 25.787);
+                overflow: auto;
+                font-size: 15px;
+            }
+
+            p img {
+                width: 150px;
+                height: 150px;
+                border-radius: 12px;
+                margin-left: 15px;
+                margin-bottom: 10px;
+                float: right;
+                transition: transform 0.3s ease;
+            }
+
+            p img:hover {
+                transform: scale(1.1);
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #333;
+                color: #f2f2f2;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                margin-top: 40px;
+            }
+
+            @media (max-width: 600px) {
+                .topnav a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    padding: 12px;
+                }
+
+
+
+             
+
+            
         </style>
     </head>
     <body>
